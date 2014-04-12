@@ -1,0 +1,34 @@
+<br>
+<br>
+<form action="/" method="get">
+	<div class="row">
+		<div class="col-md-6">
+				<label>User</label>
+				<input type="text" class="form-control" value="{{query.search}}" name="search" />
+				<small>(last query: {{searchString}})</small>
+		</div>
+		<div class="col-md-4">
+			<input type="submit" value="search" />
+		</div>
+		<div class="col-md-2">
+			<h1>{{average}}</h1>
+			<h2>{{nonZeroAverage}}</h2>
+		</div>
+	</div>
+</form>
+
+<br>
+<br>
+{{#each posts}}
+	<div class="row">
+		<div class="col-md-2">
+			<p class="lead">{{sentiment}}</p>
+		</div>
+		<div class="col-md-10">
+			<p>{{text}}</p>
+			<p>
+				<small>{{date}}</small>
+			</p>
+		</div>
+	</div>
+{{/each}}

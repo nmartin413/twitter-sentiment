@@ -1,0 +1,15 @@
+{
+	"name": "twitter-example",
+	"dependencies": {
+		"q": "*",
+		"backbone": "*",
+		"sentiment": "*",
+		"underscore": "*",
+		"express": "*",
+		"express3-handlebars": "*",
+		"twit": "*"
+	},
+	"devDependencies": {
+		"nodeunit": "*"
+	}
+}
